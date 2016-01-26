@@ -25,6 +25,7 @@ int main() {
 	char file[2] = "00";
 	int go = 1;
 	char path1[256];
+	char alt[9];
 	//char *path1 = (char *) malloc(256);
 	char *path2;
 	char foo[2] = "\0";
@@ -66,6 +67,7 @@ int main() {
 	path2 = strcat(file, ".txt");
 	
 	strcpy(board, getBoard(path1));
+	strcpy(alt, getBoard(path2));
 	
 	printf("board is %zd long\n", strlen(board));
 	printf("board is %s\n", board);
